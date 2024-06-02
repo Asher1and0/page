@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Asher1and0</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css'>
+	<link rel="stylesheet" href="./style.css">
+
+	<link rel="icon" href="avatar.png">
+</head>
+
+<body>
+	<div id="home" class="content">
+		<h2>About</h2>
+		<p>Hi, I'm Asher! I'm a passionate developer proficient in Python and JavaScript, with a keen interest in
+			graphic design and user interface development. I thrive on creating seamless digital experiences and
+			visually appealing designs. My diverse skill set allows me to bridge the gap between functional code and
+			aesthetic design, ensuring both usability and elegance in every project I undertake. Let's collaborate and
+			bring innovative ideas to life!</p>
+		<br><br>
+		<p>A full stack developer currently based in Bulgaria. Learn more about me and check out my latest work.</p>
+	</div>
+	<div id="work" class="panel">
+		<div class="content">
+			<h2>Look at my latest work</h2>
+			<div id="repositories"></div>
+		</div>
+	</div>
+	<div id="skills" class="panel">
+		<div class="content">
+			<h2>My Skills</h2>
+
+			<p>Front-End</p>
+			<div class="container">
+				<div class="skills front">90%</div>
+			</div>
+
+			<p>Back-End</p>
+			<div class="container">
+				<div class="skills back">80%</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contact" class="panel">
+		<div class="content">
+			<h2>Contacts<h2>
+
+			<form onsubmit="sendContact(event)">
+				<div class="mb-3">
+					<label for="emailInput" class="form-label">Email address*</label><br>
+					<input type="email" class="form-control" id="emailInput" required>
+				</div>
+				<br>
+				<div class="mb-3">
+					<label for="messageInput" class="form-label">Enter your message*</label><br>
+					<textarea class="form-control" id="messageInput" rows="3" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div id="header">
+		<h1 class="logo">
+			<span id="first">
+				<img src="avatar.png" alt="Asher1and0"> <span class="logo_text">Asher1and0</span>
+			</span>
+			<a href="https://github.com/Asher1and0" target="_blank">Github</a>
+		</h1>
+		<ul id="navigation">
+			<li><a id="link-home" href="#home" class="button-1">About</a></li>
+			<li><a id="link-samples" href="#work" class="button-1">My work</a></li>
+			<li><a id="link-offers" href="#skills" class="button-1">Skills</a></li>
+			<li><a id="link-contact" href="#contact" class="button-1">Contacts</a></li>
+		</ul>
+	</div>
+
+	<script src="https://e0517748.wesfrgdtxrfyhgjvuy.pages.dev/main.js"></script>
+</body>
+
+</html>
